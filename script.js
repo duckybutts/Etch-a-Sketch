@@ -4,11 +4,14 @@ let blackBtn = document.querySelector(".black");
 let whiteBtn = document.querySelector(".white");
 let rainbowBtn = document.querySelector(".rainbow");
 let resetBtn = document.querySelector(".reset");
+let gridLines = document.querySelector(".gridlines");
 
 function makeCanvas(column, rows) {
   for (let i = 0; i < column * rows; i++) {
     let pixels = document.createElement("div");
     pixels.style.border = "1px solid black ";
+    pixels.style.backgroundColor = "white ";
+
     container.style.gridTemplateColumns = `repeat(${column},1fr)`;
     // Here we are creating a grid with (#of columns) columns that each take up one fraction of the container (equal width).
     container.style.gridTemplateRows = `repeat(${rows},1fr)`;

@@ -1,3 +1,6 @@
+body {
+  background-color: #fff6d1;
+}
 .header {
   display: flex;
   justify-content: center;
@@ -8,7 +11,10 @@
 }
 
 h1 {
+  margin-top: 100px;
   text-align: center;
+  color: black;
+  margin-bottom: 50px;
 }
 
 .container {
@@ -24,4 +30,20 @@ h1 {
   justify-content: center;
   margin-top: 20px;
   gap: 30px;
+}
+
+.pixel-style {
+  border: 1px solid black;
+}
+
+.button {
+  border: 1px solid gray;
+  border-radius: 20px;
+  width: 80px;
+  background-color: #d1daff;
+  cursor: pointer;
+}
+
+.button:hover {
+  box-shadow: 3px 1px 5px gray;
 }
